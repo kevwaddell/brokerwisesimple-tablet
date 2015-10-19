@@ -1,0 +1,197 @@
+.hp-section {
+height: 100%;
+//.min-h(55);
+	.border-top(@wht; 1);
+	.pos(relative);
+	
+	&.bg-col-blk {
+	.bg-col(@blk);	
+	
+		p {
+		.col(@wht);	
+		}
+	}
+	
+	&.bg-col-grayLt {
+	.bg-col(@grayLt50);
+	}
+	
+	&.bg-grid {
+	.bg-img('grid.png');	
+	}
+	
+	.section-icon {
+	.pos(relative);
+	.display(block);
+	.h(17);
+	.w(17);
+	.bg-col(@wht);
+	.border(@gray; 1);
+	.rounded(100%);	
+	margin: 20px auto 20px auto;
+	z-index: 5;
+	.drop-shadow(0, 0, 20px, 0.7);
+	}
+	
+	.hp-txt {
+	text-align: center;
+		p {
+		.font-size(2);	
+		.line-h(3);
+		.mag-bot(2);
+		}
+		
+		h2, h3 {
+		.font-size(6);	
+		.line-h(6);
+		.mag-bot(2);
+		}
+		
+		span.col-orange {
+		.col(@orange);	
+		}
+	}
+	
+	.container-fluid {
+	.pos(relative);
+	z-index: 2;	
+	}
+	
+	.col-overlay {
+	.pos(absolute);
+	.top(0);
+	.left(0);
+	.bottom(0);
+	.right(0);	
+	z-index: 1;
+		
+		&.bg-trans-blk {
+		.trans-bg(@blk; 0.7);
+		}
+		
+		&.bg-trans-wht {
+		.trans-bg(@wht; 0.7);	
+		}
+
+	}
+	
+	button.scroll-btn {
+	.h(8);	
+		&:hover, &:active, &:focus {
+		.trans-bg(@wht; 0.2);
+			.arrow {
+			.bg-col(@orange);	
+			}
+		}
+	}
+}
+
+#hp-top {
+	.bg-img('top-banner-img.jpg');
+	.bg-repeat(no-repeat);
+	.bg-size;
+	background-position: center center;
+	.pad-top(22);
+	border-top: none;
+	
+	.hp-txt {
+		p {
+		.col(@wht);
+		}	
+	}
+	
+	button.scroll-btn {
+	bottom: 0%;	
+	z-index: 3;
+		&:hover, &:active, &:focus {
+		.trans-bg(@wht; 0.2);
+			.arrow {
+			.bg-col(@orange);	
+			}
+		}
+	}
+}
+
+#section-links {
+text-align: center;
+.pad-top(2);
+	a {
+	.display(inline-block);
+	.w(20);
+	.col(@wht);
+	.mag-left(2);
+	.mag-right(2);
+	.no-text-dec;
+		span {
+		.display(block);	
+		}
+		
+		span.icon {
+		.h(20);
+		.mag-bot(2);
+		.trans-bg(@wht; 0.7);	
+		.rounded(100%);
+		.border(@blk; 1);
+		}
+		
+		span.title {
+		.font-size(2);
+		.line-h(2);
+		.txt-trans;	
+		}
+		
+		&:hover, &:active, &:focus {
+			span.icon {
+			.bg-col(@wht);
+			}
+			
+			span.title {
+			.col(@orange);	
+			}
+		}
+
+	}	
+}
+
+#hp-who-we-are {
+z-index: 4;	
+}
+
+#hp-find-out-more {
+z-index: 6;	
+height: auto;
+.pad-bot(2);
+}
+
+
+#hp-what-we-do {
+.bg-img('what-we-do-img.jpg');
+.bg-repeat(no-repeat);
+.bg-size;
+background-position: center center;
+z-index: 5;	
+
+	button.scroll-btn {
+	bottom: 0%;	
+	z-index: 3;
+	.h(13);
+		.arrow {
+		.bg-col(@gray);	
+		}
+		
+		&:hover, &:active, &:focus {
+		.trans-bg(@blk; 0.2);
+			.arrow {
+			.bg-col(@orange);	
+			}
+		}
+	}	
+}
+
+//ORIENTATION LANDSCAPE
+@media (min-width: @screen-md) {
+	
+	#hp-top {
+	.pad-top(15);	
+	}
+}

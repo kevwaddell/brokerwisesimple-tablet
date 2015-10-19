@@ -1,0 +1,39 @@
+footer#site-info {
+	.pos(relative);
+	.pad-top(2);
+	.bg-col(@orange);
+	.border-top(@wht; 1);
+	z-index: 10;
+	text-align: center;
+	
+	small {
+	.display(block);
+	.col(white);	
+	.mag-bot(1);
+	.font-size(1.4);
+		&:last-child {
+		.mag-bot(0);	
+		}
+		a {
+		.col(@wht);
+		pointer-events: none;	
+		}
+	}
+	
+	nav#legal-links {
+	.bg-col(@gray);
+	.mag-top(2);
+	.pad-top(1.5);
+	.pad-bot(2.5);
+	.border-top(@wht; 1);
+		a {
+		.col(@wht);
+		.no-text-dec;	
+		.font-size(1.4);
+		.display(inline-block);
+		.line-h(1.4);
+		.pad-left(2);
+		.pad-right(2);
+		}	
+	}
+}
