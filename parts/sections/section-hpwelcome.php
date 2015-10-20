@@ -63,8 +63,7 @@ global	$find_title;
 	<?php if ($who_we_are_active || $what_we_do_active || $find_out_more_active) { ?>
 	<button class="scroll-btn section-scroll-btn btn-down">
 		<span class="sr-only">Scroll down</span>
-		<div class="arrow arrow-left"></div>
-		<div class="arrow arrow-right"></div>
+		<i class="fa fa-arrow-circle-down fa-lg"></i>
 	</button>
 	<?php } ?>
 	

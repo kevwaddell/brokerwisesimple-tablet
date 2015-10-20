@@ -22,8 +22,7 @@ $who_text = get_field('who_section_text', 'options');
 	
 	<button class="scroll-btn section-scroll-btn btn-down">
 		<span class="sr-only">Scroll down</span>
-		<div class="arrow arrow-left"></div>
-		<div class="arrow arrow-right"></div>
+		<i class="fa fa-arrow-circle-down fa-lg"></i>
 	</button>
 	
 </section>

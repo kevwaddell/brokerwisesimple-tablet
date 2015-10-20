@@ -5251,7 +5251,6 @@ header#masthead .banner-logo {
 /* --------------------------- */
 .hp-section {
   height: 100%;
-  border-top: 10px solid #ffffff;
   position: relative;
 }
 .hp-section.bg-col-blk {
@@ -5319,20 +5318,6 @@ header#masthead .banner-logo {
   background-color: #ffffff;
   background-color: rgba(255, 255, 255, 0.7);
 }
-.hp-section button.scroll-btn {
-  height: 80px;
-}
-.hp-section button.scroll-btn:hover,
-.hp-section button.scroll-btn:active,
-.hp-section button.scroll-btn:focus {
-  background-color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-.hp-section button.scroll-btn:hover .arrow,
-.hp-section button.scroll-btn:active .arrow,
-.hp-section button.scroll-btn:focus .arrow {
-  background-color: #e84e1b;
-}
 #hp-top {
   background-image: url(img/top-banner-img.jpg);
   background-repeat: no-repeat;
@@ -5348,19 +5333,7 @@ header#masthead .banner-logo {
   color: #ffffff;
 }
 #hp-top button.scroll-btn {
-  bottom: 0%;
   z-index: 3;
-}
-#hp-top button.scroll-btn:hover,
-#hp-top button.scroll-btn:active,
-#hp-top button.scroll-btn:focus {
-  background-color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-#hp-top button.scroll-btn:hover .arrow,
-#hp-top button.scroll-btn:active .arrow,
-#hp-top button.scroll-btn:focus .arrow {
-  background-color: #e84e1b;
 }
 #section-links {
   text-align: center;
@@ -5421,23 +5394,7 @@ header#masthead .banner-logo {
   z-index: 5;
 }
 #hp-what-we-do button.scroll-btn {
-  bottom: 0%;
   z-index: 3;
-  height: 130px;
-}
-#hp-what-we-do button.scroll-btn .arrow {
-  background-color: #575757;
-}
-#hp-what-we-do button.scroll-btn:hover,
-#hp-what-we-do button.scroll-btn:active,
-#hp-what-we-do button.scroll-btn:focus {
-  background-color: #3c3c3c;
-  background-color: rgba(61, 61, 61, 0.2);
-}
-#hp-what-we-do button.scroll-btn:hover .arrow,
-#hp-what-we-do button.scroll-btn:active .arrow,
-#hp-what-we-do button.scroll-btn:focus .arrow {
-  background-color: #e84e1b;
 }
 @media (min-width: 992px) {
   #hp-top {
@@ -5455,34 +5412,29 @@ button.scroll-btn {
   left: 0px;
   bottom: 0px;
   width: 100%;
-  height: 60px;
+  height: 30px;
   padding: 0px;
-  background-color: transparent;
+  background-color: #e84e1b;
   border: none;
+  text-align: center;
+  z-index: 2;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
-button.scroll-btn .arrow {
-  position: absolute;
-  left: 50%;
-  top: 30px;
-  height: 2px;
-  width: 60px;
-  background-color: #ffffff;
+button.scroll-btn:hover,
+button.scroll-btn:active,
+button.scroll-btn:focus {
+  background-color: #3c3c3c;
+  color: #ffffff;
 }
-button.scroll-btn .arrow-left {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  margin-left: -55px;
+button.scroll-btn.scroll-btn-dwn {
+  bottom: 0px;
+  border-bottom: 3px solid #ffffff;
 }
-button.scroll-btn .arrow-right {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  margin-left: -13px;
+button.scroll-btn.scroll-btn-up {
+  top: 0px;
 }
 button#back2top {
   position: fixed;
