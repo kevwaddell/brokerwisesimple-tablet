@@ -5471,7 +5471,7 @@ footer#site-info {
   position: relative;
   padding-top: 20px;
   background-color: #e84e1b;
-  border-top: 10px solid #ffffff;
+  border-top: 5px solid #ffffff;
   z-index: 10;
   text-align: center;
 }
@@ -5493,7 +5493,7 @@ footer#site-info nav#legal-links {
   margin-top: 20px;
   padding-top: 15px;
   padding-bottom: 25px;
-  border-top: 10px solid #ffffff;
+  border-top: 5px solid #ffffff;
 }
 footer#site-info nav#legal-links a {
   color: #ffffff;
